@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <!-- link box-icons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- icone  web -->
+    <link rel="shortcut icon" href="/src/assets/jpg/logo_simbolo.png" type="image/x-icon">
+
+    <!-- link css  -->
+    <link rel="stylesheet" type="text/css" href="/src/style/style.css">
+
+    <!-- link css bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <!-- header  -->
+    <header>
+        <img src="/src/assets/png/logo.png" alt="logo da netflix">
+    </header>
+
+    <!-- card login  -->
+    <div class="container-fluid container-login">
+
+        <div class="card-login"> 
+
+            <div class="title-login">
+                <p>Entrar</p>
+            </div>
+
+            <form id="myForm">
+
+                <div class="form-control-login">
+                    <input type="text" name="email" class="fieldset_email" placeholder="Email ou número de telefone" autocomplete="off">
+                    <span class="legend_email">Informe um email válido.</span>
+                </div>
+
+                <div class="form-control-login">
+                    <input type="password" name="senha" class="fieldset_senha" placeholder="Senha" autocomplete="off">
+                    <span class="legend_senha">A senha deve ter entre 4 e 60 caracteres.</span>
+                </div>
+
+                <div class="form-control-login">
+                    <input type="submit" class="btn-submit" value="Entrar">
+                </div>
+
+            </form>
+
+            <div class="legenda-login">
+
+                <div class="select-active">
+
+                    <input type="checkbox" name="" id="checkbox" onclick="showPassword()">
+
+                    <span>Lembrese-se de mim</span>
+
+                </div>
+
+                <a class="link-href">Precisa de ajuda?</a>
+
+            </div>
+
+            
+            <div class="login-convite">   
+                <p>Novo por aqui?</p>
+                <p class="link-href">Assine agora.</p>
+            </div>
+
+            <div>
+                <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a> </p>
+            </div>
+
+        </div> 
+        
+    </div>
+
+    <!-- footer  -->
+    <footer class="bg-body-tertiary text-left text-lg-start">
+
+        <div class="container">
+
+          <div class="footer-duvidas">
+            <p>Dúvidas? Ligue <a href="#">0800 591 2876</a> </p>
+          </div>
+   
+          <div class="row">
+
+          
+
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+                <ul class="list-unstyled">
+
+                  <li>
+                    <a href="#" class="">Perguntas frequentes</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="">Preferências de cookies</a>
+                  </li>
+
+                </ul>
+              </div>
+
+      
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+              <ul class="list-unstyled">
+
+                <li>
+                  <a href="#" class="">Central de Ajuda</a>
+                </li>
+                <li>
+                  <a href="#" class="">Informações corporativas</a>
+                </li>
+               
+              </ul>
+            </div>
+
+      
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+              <ul class="list-unstyled mb-0">
+
+                <li>
+                  <a href="#" class="">Termos de Uso</a>
+                </li>
+             
+              </ul>
+            </div>
+
+      
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+              <ul class="list-unstyled">
+
+                <li>
+                  <a href="#" class="">Privacidade</a>
+                </li>
+                
+              </ul>
+            </div>
+
+            
+              <div class="fieldset-linguage">
+
+                <div class="icone-linguage">
+
+                    <i class='bx bx-globe'></i>
+
+                </div>
+
+                <select class="form-select">
+
+                  <option value="0" selected >Português</option>
+                  <option value="1">Inglês</option>
+
+                </select>
+                
+              </div>
+
+
+          </div>
+   
+        </div>
+
+    </footer>
+    
+    <!-- script  -->
+    <script src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/send.js"></script>
+
+</body>
+</html>

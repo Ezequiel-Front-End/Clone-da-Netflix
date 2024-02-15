@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --bg-card: #000000c3;
+    --bg-button: #E50914;
+    --bg-input: #333;
+    --bg-alert: #E87C03;
+    --text-color: #8C8C8C;
+    --text-white: #fff;
+
+    --font-text-min: 10pt;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('/src/assets/jpg/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.50rem;
+    background: rgba(5, 5, 5, 0.6);
+    background: linear-gradient(to bottom, black, rgba(5, 5, 5, 0.6) 40%);
+
+}
+
+header img {
+    height: auto;
+    width: 200px;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(5, 5, 5, 0.6);
+}
+
+.card-login {
+    height: 45rem;
+    width: 490px;
+    background: var(--bg-card);
+    color: var(--text-color);
+    padding: 4rem 4rem;
+    margin-bottom: 10rem;
+}
+
+.card-login .title-login {
+    color: var(--text-white);
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card-login .title-login p {
+    font-size: 25pt;
+    font-weight: 500;
+}
+
+form {
+    height: auto;
+    width: 100%;
+}
+
+form .form-control-login {
+    margin-bottom: 10px;
+}
+
+form .form-control-login input {
+    height: auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.90rem;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background: var(--bg-input);
+    color: var(--text-white);
+    border-bottom: 2px solid var(--bg-alert);
+    border: none;
+}
+
+form .form-control-login span {
+    font-size: var(--font-text-min);
+    color: var(--bg-alert);
+    display: none;
+}
+
+form .form-control-login input::placeholder {
+    color: var(--text-color);
+}
+
+form .form-control-login input[type="submit"] {
+    margin-top: 2rem;
+    font-size: 12pt;
+    background: var(--bg-button);
+    border: none;
+}
+
+.card-login .legenda-login {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11pt;
+    margin-top: 10px;
+}
+
+.card-login .legenda-login span {
+    margin-top: 5px;
+}
+
+.card-login .legenda-login .select-active input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.card-login .legenda-login .select-active input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    background: var(--bg-input);
+    border-radius: 1px;
+}
+
+.card-login .legenda-login .select-active input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.card-login .legenda-login .select-active {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-login .legenda-login .link-href {
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-login .legenda-login .link-href:hover {
+    text-decoration: underline;
+}
+
+.card-login div:nth-of-type(4) {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-text-min);
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.card-login div:nth-of-type(4) a {
+    text-decoration: none;
+}
+
+.card-login div:nth-of-type(4) a:hover {
+    text-decoration: underline;
+}
+
+.card-login .login-convite {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12pt;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card-login .login-convite .link-href {
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+.card-login .login-convite .link-href:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 3rem 8rem;
+    height: auto;
+    width: 100%;
+    background: #000000d8;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: var(--font-text-min);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+footer .container .footer-duvidas {
+    color: var(--text-color);
+    font-size: 13pt;
+}
+
+footer .container .footer-duvidas a {
+    color: var(--text-color);
+    font-size: 13pt;
+}
+
+footer .container .footer-duvidas a:hover {
+    text-decoration: underline;
+}
+
+footer .container .fieldset-linguage {
+    margin-top: 1rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .container .fieldset-linguage i {
+    font-size: 18pt;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+footer .container .fieldset-linguage select {
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+footer .container .fieldset-linguage select option {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        height: auto;
+        width: 100%;
+        background: #000;
+    }
+
+    header {
+        background: linear-gradient(to bottom, black, rgba(5, 5, 5, 0.6) 0%);
+        background: #000;
+        border: none;
+    }
+
+    .card-login {
+        background: #000000;
+        height: auto;
+        width: 100%;
+        padding: 0.90rem;
+    }
+
+    .container-login {
+        height: auto;
+        width: 100%;
+        background: #000;
+
+    }
+
+    footer {
+        padding: 0rem;
+        margin: 0px;
+        border-top: 1px solid var(--text-color);
+        height: auto;
+        width: 100%;
+        background: #000;
+    }
+
+    footer .row {
+        height: auto;
+        width: 100%;
+    }
+
+    footer .footer-duvidas {
+        margin-top: 3rem;
+    }
+
+    footer .fieldset-linguage select {
+        display: none;
+    }
+
+    footer .fieldset-linguage .icone-linguage {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    header img {
+        height: auto;
+        width: 150px;
+    }
+
+    .card-login {
+        padding: 0.50rem;
+    }
+
+}
