@@ -21,7 +21,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-image: url('/src/assets/jpg/background.jpg');
+    background-image: url('../assets/jpg/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
